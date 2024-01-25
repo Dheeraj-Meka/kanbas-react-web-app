@@ -1,0 +1,222 @@
+<html>
+    <body>
+        <table>
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <ul>
+                            <li><a href="/Kanbas/Account/Navigation/index.html"> Account</a></li>
+                            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
+                            <li><a href="/Kanbas/Calendar/index.html">Calendar</a></li>
+                            <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+                            <li><a href="">History</a></li>
+                            <li><a href="">Studio</a></li>
+                            <li><a href="">Commons</a></li>
+                            <li><a href="">Help</a></li>
+                          </ul>                          
+                    </td>
+                    <td valign="top">
+                        <ul>
+                            <li><a href="/Kanbas/Courses/Home/screen.html"> Home</a></li>
+                            <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+                            <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+                            <li><a href="">Zoom Meetings</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
+                            <li><a href="">Quizzes</a></li>
+                            <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+                            <li><a href="">People</a></li>
+                            <li><a href="">Panopto Video</a></li>
+                            <li><a href="">Discussions</a></li>
+                            <li><a href="">Announcements</a></li>
+                            <li><a href="">Pages</a></li>
+                            <li><a href="">Files</a></li>
+                            <li><a href="">Rubrics</a></li>
+                            <li><a href="">Outcomes</a></li>
+                            <li><a href="">Collaborations</a></li>
+                            <li><a href="">Syllabus</a></li>
+                            <li><a href="">Settings</a></li>
+                          </ul>                          
+                    </td>
+                    <td valign="top">
+                        <table cellspacing="10">
+                            <tbody>
+                                <tr>
+                                    <td><a href="/Kanbas/Courses/Settings/Course Details/screen.html">Course Details</a></td>
+                                    <td><a href="#">Sections</a></td>
+                                    <td><a href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a></td>
+                                    <td><a href="#">Apps</a></td>
+                                    <td><a href="#">Features</a></td>
+                                    <td><a href="#">Integrations</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <form>
+                            <h3>Course Details</h3>
+                            <table cellspacing="10">
+                                <tbody>
+                                    <tr>
+                                        <td><label for="wd-image-upload">Image:</label></td>
+                                        <td><input type="file" id="wd-image-upload" name="image-upload"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-course-name">Name:</label></td>
+                                        <td><input type="text" id="wd-course-upload" name="course-upload" value="CS5610 36915 Web Development SEC 07 Spring 2024 [BOS-2-TR]" readonly size="50"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-course-code">Course Code:</label></td>
+                                        <td><input type="text" id="wd-course-code" name="course-code" value="CS5610.36915.202430" readonly/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-blueprint-course">BluePrint Course:</label></td>
+                                        <td><input type="text" id="wd-blueprint-course" name="blueprint-course" value="No" readonly/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-course-template">Course Template:</label></td>
+                                        <td><button id = "wd-course-template">Enable course as a course template</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-time-zone">Time Zone:</label></td>
+                                        <td>
+                                            <select id="wd-time-zone">
+                                                <option>(GMT-05:00) Eastern Time (US & Canada)</option>
+                                                <option>(GMT-06:00) Central Time (US & Canada)</option>
+                                                <option>(GMT-07:00) Mountain Time (US & Canada)</option>
+                                                <option>(GMT-08:00) Pacific Time (US & Canada)</option>
+                                                <option>(GMT-09:00) Alaska</option>
+                                                <option>(GMT-10:00) Hawaii</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-ssid">SIS ID:</label></td>
+                                        <td><input type="text" id="wd-ssid" name="ssid" value="CS5610.36915.202430" readonly/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-sub-account">Subaccount:</label></td>
+                                        <td><a id="wd-sub-account" href="">CS Graduate</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-term">Term:</label></td>
+                                        <td><input type="text" id="wd-term" name="term" value="Spring 2024 Semester Term" readonly/></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-participation">Participation:</label></td>
+                                        <td>
+                                            <select id="wd-participation">
+                                                <option>Term</option>
+                                                <option>Term 2</option>
+                                            </select><br/>
+                                            Course Participation is limited to <b>term</b> start and end dates.<br/>
+                                            <label for="wd-start-date">Start</label><br/>
+                                            <input type="date" id="wd-start-date" name="start-date"/><br/>
+                                            <label for="wd-end-date">End</label><br/>
+                                            <input type="date" id="wd-end-date" name="end-date"/><br/>
+                                            <input type="checkbox" id="wd-restrict-view-start" name="checkboxes"/><label for="wd-restrict-view-start">Restrict students from viewing course before term start date</label><br/>
+                                            <input type="checkbox" id="wd-restrict-view-end" name="checkboxes"/><label for="wd-restrict-view-end">Restrict students from viewing course after term end date</label><br/>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-default-time">Default Due Time:</label></td>
+                                        <td>
+                                            <select id="wd-default-time">
+                                                <option>Account default (11:59pm)</option>
+                                                <option>(GMT-06:00) Central Time (US & Canada)</option>
+                                                <option>(GMT-07:00) Mountain Time (US & Canada)</option>
+                                                <option>(GMT-08:00) Pacific Time (US & Canada)</option>
+                                                <option>(GMT-09:00) Alaska</option>
+                                                <option>(GMT-10:00) Hawaii</option>
+                                            </select><br/>
+                                            This influences the user interface for settingsue dates. It does<br/> 
+                                            not change the time due for any existing assignments.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-language">Language:</label></td>
+                                        <td>
+                                            <select id="wd-language">
+                                                <option>Not Set</option>
+                                                <option>English</option>
+                                                <option>Hindi</option>
+                                                <option>Spanish</option>
+                                                <option>Chinese</option>
+                                                <option>French</option>
+                                            </select><br/>
+                                            This will override any user/system language preferences. This is<br/> 
+                                            only recommended for foreign language courses.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-file-storage">File Storage:</label></td>
+                                        <td><input type="text" id="wd-file-storage" name="ssid" value="10000 megabytes" readonly/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-large-course">Large Course:</label></td>
+                                        <td><input type="checkbox" id="large-course" name="checkboxes1"/><label for="large-course">Launch SpeedGrader filtered by student group</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-grading scheme">Grading Scheme:</label></td>
+                                        <td><input type="checkbox" id="grading-scheme" name="checkboxes2"/><label for="grading-scheme">Enable course grading scheme</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-license">License:</label></td>
+                                        <td>
+                                            <select id="wd-license">
+                                                <option>Private(Copyrighted)</option>
+                                                <option>Public</option>
+                                            </select><br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-file-copyright">File copyright:</label></td>
+                                        <td><input type="checkbox" id="wd-file-copyright" name="checkboxes3"/>
+                                            <label for="wd-file-copyright">
+                                                Copyright and license information is required before publishing
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-visibility">Visibility:</label></td>
+                                        <td>
+                                            If you need to make your course public please contact your<br/>
+                                            administrator/support.<br/> 
+                                            <select id="wd-visibility" disabled>
+                                                <option>Course</option>
+                                                <option>Course and Users</option>
+                                            </select><br/>
+                                            <input type="checkbox" id="wd-visibility-cbox" name="checkboxes4" disabled/>
+                                            <label for="wd-visibility-cbox">
+                                                Include this course in public course indexing
+                                            </label>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td valign="top"><label for="wd-format">Format:</label></td>
+                                        <td>
+                                            <select id="wd-format">
+                                                <option>On-Campus</option>
+                                                <option>On-line</option>
+                                            </select><br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="wd-mastery">Mastery Path:</label></td>
+                                        <td><input type="checkbox" id="wd-mastery" name="checkboxes5"/><label for="wd-mastery">Enable individual learning paths for students</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top"><label for="wd-description">Description:</label></td>
+                                        <td>
+                                            <textarea id="wd-description" name="description" rows="4" cols="50">This is a course description.</textarea><br/>
+                                            <a href="#">more options</a>
+                                        </td>
+                                      </tr>
+                                </tbody>
+                            </table>
+                            <button type="save">Update Course Details</button>
+                            </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

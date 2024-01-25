@@ -1,0 +1,63 @@
+<label for="assignment-name">Assignment Name</label><br/>
+<input value="A1" id="assignment-name" /><br/><br/>
+<textarea>This is assignment description.</textarea><br/><br/>
+
+<table>
+    <tbody>
+        <tr>
+            <td>Points</td>
+            <td><input type="number" value="100" min="0" max="100"/></td>
+        </tr>
+        <tr>
+            <td>Assignment Group</td>
+            <td><select>
+                <option>Group 1</option>
+                <option>Group 2</option>
+                <option>Group 3</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Display Grade as</td>
+            <td><select>
+                <option>Percentage</option>
+                <option>Numerical</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Submission Type</td>
+            <td><select>
+                <option>Online</option>
+                <option>Canvas</option>
+                <option>Email</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td valign="top">Online Entry Option</td>
+            <td>
+                <input type="checkbox" name="wd-entry-options" id="wd-text-entry"/>
+                <label for="wd-text-entry">Text Entry</label><br/>
+                <input type="checkbox" name="wd-entry-options" id="wd-website-url"/>
+                <label for="wd-website-url">Website URL</label><br/>
+                <input type="checkbox" name="wd-entry-options" id="wd-media"/>
+                <label for="wd-media">Media Recordings</label><br/>
+                <input type="checkbox" name="wd-entry-options" id="wd-annotation"/>
+                <label for="wd-annotation">Student Annotation</label><br/>
+                <input type="checkbox" name="wd-entry-options" id="wd-file-upload"/>
+                <label for="wd-file-upload">File Uploads</label><br/>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Assign</td>
+            <td>Assign to<br/>
+            <input type="text" value="Everyone"/><br/>
+            Due<br/>
+            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
+            Available from<br/>
+            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
+            Until<br/>
+            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
+        </td>
+        </tr>
+    </tbody>
+</table>
+
