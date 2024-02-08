@@ -1,0 +1,19 @@
+
+
+.wd-green-icon {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#wd-description {
+    text-align: left;
+    white-space: pre-line;
+}
+
+.btn-light.wd-black-text {
+    color: black
+}
+
+.btn-danger.wd-white-text {
+    color: white
+}

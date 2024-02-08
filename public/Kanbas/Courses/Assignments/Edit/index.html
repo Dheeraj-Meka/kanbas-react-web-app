@@ -1,63 +1,147 @@
-<label for="assignment-name">Assignment Name</label><br/>
-<input value="A1" id="assignment-name" /><br/><br/>
-<textarea>This is assignment description.</textarea><br/><br/>
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css">
+</head>
+<body>
+    <div class="col-10">
+        <div class="row">
+            <nav style="flex-direction: row; flex-grow: 1; padding-left: 10px;">
+                <form class="form-group">
+                    <div class="d-flex justify-content-end">     
+                        <div>                                            
+                            <i class="fa fa-check-circle wd-green-icon" aria-hidden="true">&nbsp;Published</i>                                            
+                            <button class="btn btn-light btn-outline-secondary" type="submit"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </form> 
+                <hr>      
+            </nav>
+        </div> 
+        <form class="form-group col-8" action="/kanbas/courses/assignments/screen.html">
+            <div class="mb-3">
+                <label for="assignmentName" class="form-label">Assignment Name</label>
+                <input type="text" class="form-control" id="assignmentName" placeholder="Assignment Name" value="A1 - ENV + HTML">
+            </div>
+            <div class="mb-3">            
+            <textarea class="form-control" id="wd-description" rows="5">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+            </textarea>
+            </div>
+            <div class="mb-3 row form-group">
+                <div class="col">
+                    <label class="form-label" for="points">Points</label>
+                </div>
+                <div class="col-7">
+                    <input class="form-control" type="number" value="100" id="wd-points">
+                </div>
+                <div class="col-2"></div>
+            </div>
+                
+            <div class="mb-3 row">
+                <div class="col">
+                    <label class="form-label" for="wd-assign-group">Assignment Group</label>
+                </div>
+                <div class="col-7">
+                    <select class="form-select" id="wd-assign-group">
+                        <option selected>ASSIGNMENTS</option>
+                        <option>Choice - 2</option>
+                        <option>Choice - 3</option>
+                    </select>
+                </div>
+                <div class="col-2"></div>                                                                        
+            </div>
+            
+            <div class="mb-3 row ">
+                <div class="col">
+                    <label class="form-label" for="wd-grade-display">Display Grade as</label>
+                </div>
+                <div class="col-7">
+                    <select class="form-select" id="wd-grade-display">
+                        <option selected>PERCENTAGE</option>
+                        <option>Marks</option>
+                        <option>Alphabets</option>
+                    </select>
+                </div>
+                <div class="col-2"></div>
+            </div>
 
-<table>
-    <tbody>
-        <tr>
-            <td>Points</td>
-            <td><input type="number" value="100" min="0" max="100"/></td>
-        </tr>
-        <tr>
-            <td>Assignment Group</td>
-            <td><select>
-                <option>Group 1</option>
-                <option>Group 2</option>
-                <option>Group 3</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td>Display Grade as</td>
-            <td><select>
-                <option>Percentage</option>
-                <option>Numerical</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td>Submission Type</td>
-            <td><select>
-                <option>Online</option>
-                <option>Canvas</option>
-                <option>Email</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td valign="top">Online Entry Option</td>
-            <td>
-                <input type="checkbox" name="wd-entry-options" id="wd-text-entry"/>
-                <label for="wd-text-entry">Text Entry</label><br/>
-                <input type="checkbox" name="wd-entry-options" id="wd-website-url"/>
-                <label for="wd-website-url">Website URL</label><br/>
-                <input type="checkbox" name="wd-entry-options" id="wd-media"/>
-                <label for="wd-media">Media Recordings</label><br/>
-                <input type="checkbox" name="wd-entry-options" id="wd-annotation"/>
-                <label for="wd-annotation">Student Annotation</label><br/>
-                <input type="checkbox" name="wd-entry-options" id="wd-file-upload"/>
-                <label for="wd-file-upload">File Uploads</label><br/>
-            </td>
-        </tr>
-        <tr>
-            <td valign="top">Assign</td>
-            <td>Assign to<br/>
-            <input type="text" value="Everyone"/><br/>
-            Due<br/>
-            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
-            Available from<br/>
-            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
-            Until<br/>
-            <input name="wd-due-date" type="date" value="2020-12-31"/><br/>
-        </td>
-        </tr>
-    </tbody>
-</table>
+            <div class="mb-3 row">
+                <div class="col-3"></div>
+                <div class="col form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="wd-do-not-count">
+                    <label class="form-check-label" for="wd-do-not-count">
+                      Do not count this assignment towards the final grade
+                    </label>
+                </div>
+            </div>
 
+            <div class="mb-3 row">
+                <div class="col">
+                    <label class="form-label" for="assignGroup">Display Grade as</label>
+                </div>
+                <div class="col-7">
+                    <input class="form-control" type="number" value="100" id="assignGroup">
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col">
+                    <label class="form-label" for="subattempts">Assign</label>
+                </div>                            
+                <div class="col-7 border rounded-2">
+                    <div class="mb-3 mt-3">
+                        <label for="assignTo" class="form-label mb-0"><b>Assign To</b></label>
+                        <input type="text" class="form-control" id="assignTo" value="Everyone">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="due" class="form-label mb-0"><b>Due</b></label>
+                        <input type="date" class="form-control" id="due" value="2024-02-08">
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col mb-3">
+                            <label for="availableFrom" class="form-label mb-0"><b>Available from</b></label>
+                            <input type="date" class="form-control" id="availableFrom" value="2024-02-08">
+                        </div>
+                        <div class="col mb-3">
+                            <label for="until" class="form-label mb-0"><b>Until</b></label>
+                            <input type="date" class="form-control" id="until" value="2024-02-08">
+                        </div>
+                    </div>
+                    <div class="row mt-0 border border-top rounded-2">
+                        <button type="button" class="btn btn-light">+Add</button>
+                    </div>                                    
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">                            
+                <div class="form-check mt-2">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Notify users that this content has changed
+                    </label>
+                </div>
+                <div class="mt-1">
+                    <button type="submit" class="btn btn-outline-secondary btn-light">Cancel</button>
+                    <button type="submit" class="btn btn-danger btn-outline-secondary">Save</button>
+                </div>                             
+            </div>
+
+
+
+
+
+
+
+
+                  
+        </form>
+
+        </div>                    
+    </div>        
+</div>
+</div>  
+</div>
+</div>
+</body>

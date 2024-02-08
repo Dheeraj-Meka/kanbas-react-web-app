@@ -1,0 +1,15 @@
+.wd-flex-row-container {
+    display: flex;
+}
+
+.wd-kanbas-navigation {
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+    position: relative;
+    padding-left: 100px;
+}
