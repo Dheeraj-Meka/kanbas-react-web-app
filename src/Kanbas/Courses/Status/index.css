@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+}
+
+button.btn-publish {
+    background-color: green;
+}
+
+
+
+.d-block.d-md-none {
+    background-color: black;
+    color: white; 
+    padding: 10px; 
+    text-align: center; 
+  }
+
+
+.wd-modal-kanbasnav a {
+    text-decoration: none;
+    color: red;
+}
+
+
+.wd-modal-kanbasnav i {
+    color: red;
+}
+
+.modal {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.modal-body {
+    flex: 1;
+    text-align: left;
+}
+
+.menu-icon,
+.chevron-icon {
+  cursor: pointer;
+}
+
+.fa.fa-check-circle-o {
+    color: green;
+}
+
+small {
+    font-size: .8em; color: grey
+}
+
+.wd-text-red {
+    color: red;
+}

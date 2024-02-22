@@ -1,0 +1,115 @@
+.top-margin {
+    margin-top: 20px;
+}
+
+/*body {
+    padding-top: 20px;
+    padding-left: 20px;
+}*/
+
+.total-button{  
+    border-radius: 25px;
+    border: 1px solid;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    margin-right: 10px;
+}
+
+.wd-green-icon {
+    color: rgb(0, 97, 21);
+}
+
+.btn-light {
+    color: black;
+}
+
+.btn-danger {
+    color: white;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+body div .wd-flex-grow-1 form {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+body div li span {
+    color: grey;
+    font-size: .8em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    display: block;
+    overflow: hidden;
+  
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.wd-breadcrumb-description {
+
+    padding-left: 15px;
+    text-decoration: none;
+    color: rgb(214,4,4);
+}
+
+
+
+.wd-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.list-group-item {
+    
+    border-left-width: 4px;
+    border-left-style: solid;
+    border-left-color: rgb(0, 97, 21);
+}
+
+.list-group-item-heading {
+    
+    background-color: #ececec;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: rgba(0, 0, 0, 0.125);
+}
+
+
+
+div .fw-light {
+
+    font-size: .9em;
+    color: rgb(116, 116, 116);
+}
+
+.wd-padding-20-right {
+    padding-right: 20px;
+}
+
+.wd-padding-20-left {
+    padding-left: 20;
+}
+
+.wd-padding-2-right {
+    padding-right: 2;
+}
+
+
+.wd-border-left {
+    border-left: +5px solid rgb(0, 97, 21);
+    
+}
+

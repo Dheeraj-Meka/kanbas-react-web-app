@@ -1,0 +1,39 @@
+
+
+table {
+    font-size: 0.8em;
+    text-align: center;
+      
+}
+
+table tbody tr td {
+    column-width: 150px;
+}
+
+.centered-input {
+    text-align: center;
+}
+
+table .wd-grades-table-student-name {
+    text-align: left;
+    column-width: flex; 
+    color: rgb(214, 4, 4);
+} 
+
+.table-striped>tbody>tr:nth-of-type(odd)>*.wd-grades-table-student-name {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: rgb(214, 4, 4);
+}
+
+.wd-buttons-align{
+    align-items: left;
+}
+
+.btn-custom {
+    height: 45px;
+    border: 1px solid #000;
+}
+
+body {
+    overflow-x: hidden;
+}
