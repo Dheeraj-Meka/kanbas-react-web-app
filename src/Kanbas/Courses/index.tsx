@@ -9,7 +9,8 @@ import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaBars, FaBook, FaBullhorn, FaCalendar, FaClock, FaCog, FaComments, FaDatabase, FaEnvelope, FaExternalLinkAlt, FaFile, FaGraduationCap, FaGrav, FaHome, FaInfo, FaListAlt, FaOpera, FaPlug, FaRocket, FaTachometerAlt, FaTv, FaUser, FaUsers } from "react-icons/fa";
-import 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js';
+import "../../libs/bootstrap/bootstrap.min.css";
+import "../../libs/bootstrap/bootstrap.bundle.min.js";
 
 function Courses() {
   const { courseId } = useParams();
