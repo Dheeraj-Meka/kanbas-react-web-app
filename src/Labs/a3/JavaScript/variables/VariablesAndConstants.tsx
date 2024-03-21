@@ -1,25 +1,15 @@
-import { Route, Routes, useLocation } from "react-router";
-import { Link } from "react-router-dom";
-
 function VariablesAndConstants() {
-   const { pathname } = useLocation();
-  return (
-    <div>
-      output =
-      {pathname.includes("s") && <span>p</span>}
-      {pathname.includes("w") && <span>y</span>}
-    </div>
-  );
-}
-
-export default function Abc() {
-  return (
-    <div>
-      <Link to="q/w">x</Link>
-      <Link to="q/s">r</Link>
-      <Routes>
-        <Route path="q/:a" element={<VariablesAndConstants />} />
-      </Routes>
-    </div>
-  );
+    var functionScoped = 2;
+    let blockScoped = 5;
+    const constant1 = functionScoped - blockScoped;
+ 
+    return(
+       <div>
+          <h2>Variables and Constants</h2>
+          functionScoped = { functionScoped }<br/>
+          blockScoped = { blockScoped }<br/>
+          constant1 = { constant1 }<br/>
+       </div>
+    );
  }
+ export default VariablesAndConstants

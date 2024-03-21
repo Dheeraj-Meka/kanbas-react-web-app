@@ -68,20 +68,19 @@ function AssignmentEditor() {
             <Link
               onClick={() => dispatch(updateAssignment({ assignmentData }))}
               to={`/Kanbas/Courses/${assignment.course}/Assignments`}
-              className="btn m-2 fs-5 btn-danger float-end"
+              className="btn btn-success me-2 float-end"
             >
               Save
             </Link>
             <Link
               to={`/Kanbas/Courses/${assignment.course}/Assignments`}
-              className="btn btn-secondary m-2 fs-5 bg-light text-dark float-end"
+              className="btn btn-danger me-2 float-end"
             >
               Cancel
             </Link>
           </div>
         </div>
       </form>
-      <hr />
     </div>
   );
 }

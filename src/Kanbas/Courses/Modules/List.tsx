@@ -75,7 +75,7 @@ function ModuleList() {
                         <button className="btn btn-danger mt-3 me-3" onClick={() => {dispatch(addModule({ ...module, course: courseId }));setShowInputFields(false);}}>
                             Add
                         </button>
-                        <button className="btn btn-danger mt-3 me-3" onClick={() => {dispatch(updateModule({ ...module, course: courseId }));setShowInputFields(false);}}>
+                        <button className="btn btn-danger mt-3 me-3" onClick={() => {dispatch(updateModule(module));setShowInputFields(false);}}>
                             Update
                         </button>
                       <button className="btn btn-danger mt-3 me-3" onClick={() => setShowInputFields(false)}>Cancel</button>
