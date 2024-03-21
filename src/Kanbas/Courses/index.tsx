@@ -6,6 +6,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
+import AddNewAssignment from "./Assignments/Editor/addNewAssignment";
 import Grades from "./Grades";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaBars, FaBook, FaBullhorn, FaCalendar, FaClock, FaCog, FaComments, FaDatabase, FaEnvelope, FaExternalLinkAlt, FaFile, FaGraduationCap, FaGrav, FaHome, FaInfo, FaListAlt, FaOpera, FaPlug, FaRocket, FaTachometerAlt, FaTv, FaUser, FaUsers } from "react-icons/fa";
@@ -13,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const location = useLocation();
   const course = courses.find((course) => course._id === courseId);
@@ -131,6 +132,7 @@ function Courses() {
             <Route path="Piazza" element={<h1>Piazza</h1>} />
             <Route path="Assignments" element={<Assignments/>} />
             <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
+            <Route path="Assignments/AddAssignment" element={<AddNewAssignment/>} />
             <Route path="Grades" element={<Grades/>} />
             <Route path="People" element={<h1>People</h1>} />
             <Route path="Settings" element={<h1>Settings</h1>} />
